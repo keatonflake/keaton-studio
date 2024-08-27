@@ -21,6 +21,11 @@ const Hero = () => {
 
       {/* Right Side */}
       <div className="flex items-center justify-center">
+        <p>
+          I am driven by a deep passion for continuous learning, making a
+          meaningful impact, and coding with best development methodologies and
+          standards.
+        </p>
         <LinkedIn />
       </div>
     </div>
