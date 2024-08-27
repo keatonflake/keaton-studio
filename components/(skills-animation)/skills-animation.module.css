@@ -1,0 +1,12 @@
+/* .text_wrapper {
+  width: 50%;
+} */
+
+.text_wrapper p {
+  font-size: 3em;
+  text-align: center;
+  color: white;
+  margin: 0;
+  line-height: 0;
+  font-family: var(--font-serif);
+}
