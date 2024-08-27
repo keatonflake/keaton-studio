@@ -2,7 +2,7 @@ const page = () => {
   return (
     <div
       id="container"
-      className="text-light flex-row w-1/2 m-auto text-center"
+      className="text-light flex-row h-max m-auto text-center p-4"
     >
       <h1 className="font-serif text-3xl">Milisan Roblox Code</h1>
       <h2 className="font-serif text-2xl">Week of August 26th</h2>
