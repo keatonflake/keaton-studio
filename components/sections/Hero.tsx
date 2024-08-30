@@ -1,5 +1,6 @@
 import { LinkedIn, GitHub, Resume } from "../(buttons)/Buttons";
 import ProfileImage from "../(profile-box)/ProfileImage";
+import Widget from "../(widget)/Widget";
 // import SkillsAnimation from "../(skills-animation)/SkillsAnimation";
 
 const Hero = () => {
@@ -20,16 +21,19 @@ const Hero = () => {
       </div>
 
       {/* Right Side */}
-      <div className="flex flex-col items-center justify-center max-w-96 text-center space-y-4">
-        <p>
+      <div className="flex flex-col items-center justify-center">
+        <p className="max-w-96 text-lg text-center mb-3">
           I am driven by a deep passion for continuous learning, making a
           meaningful impact, and coding with best development methodologies and
           standards.
         </p>
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 mb-10">
           <Resume />
           <LinkedIn />
           <GitHub />
+        </div>
+        <div className="">
+          <Widget />
         </div>
       </div>
     </div>

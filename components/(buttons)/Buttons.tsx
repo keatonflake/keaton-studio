@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 export const LinkedIn = () => {
   return (
     <a href="https://www.linkedin.com/in/keaton-flake/">
-      <IoLogoLinkedin color="white" size="2em" />
+      <IoLogoLinkedin color="white" size="2.5em" />
     </a>
   );
 };
@@ -12,7 +12,7 @@ export const LinkedIn = () => {
 export const GitHub = () => {
   return (
     <a href="https://github.com/keatonflake">
-      <FaGithub color="white" size="2em" />
+      <FaGithub color="white" size="2.5em" />
     </a>
   );
 };
@@ -20,7 +20,7 @@ export const GitHub = () => {
 export const Resume = () => {
   return (
     <a href="https://github.com/keatonflake">
-      <button className="rounded-full bg-blue border-2 border-light px-3 py-1">
+      <button className="rounded-full bg-blue border-2 text-lg border-light px-3 py-1">
         Resume
       </button>
     </a>
