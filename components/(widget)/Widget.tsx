@@ -43,7 +43,7 @@ const Widget = () => {
     <div className="flex justify-center items-center">
       <div
         ref={widgetRef}
-        className="relative w-80 h-44 rounded-lg overflow-hidden"
+        className="relative w-5/6 h-44 lg:w-full lg:h-52 rounded-lg overflow-hidden"
       >
         <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 bg-white bg-opacity-50">
           <div className="flex justify-center items-center">
