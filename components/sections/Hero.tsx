@@ -5,7 +5,7 @@ import Widget from "../(widget)/Widget";
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:max-w-7xl mx-auto my-10 lg:mt-44 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:max-w-7xl mx-auto my-10 gap-4">
       {/* Left Side */}
       <div className="flex flex-col justify-center items-center text-center md:border-r-4 md:border-light h-full">
         <h2 className="text-2xl">Hello! I am</h2>
@@ -13,7 +13,7 @@ const Hero = () => {
         <ProfileImage />
         <div>
           {/* <SkillsAnimation /> */}
-          <h1 className="text-4xl sm:text-5xl md:text-4xl lg:text-6xl">
+          <h1 className="text-4xl sm:text-5xl md:text-4xl lg:text-5xl">
             Software Engineer
           </h1>
         </div>
@@ -23,17 +23,17 @@ const Hero = () => {
       </div>
 
       {/* Right Side */}
-      <div className="flex-col items-center justify-center md:mt-40">
-        <div className="w-80 sm:w-3/4 text-lg text-center mx-auto">
+      <div className="flex-col items-center justify-center md:mt-20">
+        <div className="flex-row w-80 md:w-96 text-lg text-center mx-auto">
           <p>
             I am driven by a deep passion for continuous learning, making a
             meaningful impact, and coding with best development methodologies
-            and standards.
+            and standards.{" "}
+            <a className="cursor-pointer text-yellow">Learn More</a>
           </p>
-          <a className="cursor-pointer text-yellow">Learn More</a>
         </div>
 
-        <div className="flex justify-center items-center space-x-4 my-5">
+        <div className="flex justify-center items-center space-x-5 mb-10 mt-5">
           <Resume />
           <LinkedIn />
           <GitHub />

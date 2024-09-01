@@ -1,11 +1,11 @@
 import Hero from "../components/sections/Hero";
-import Projects from "../components/sections/Projects";
+import MyWork from "../components/sections/MyWork";
 
 const Home = () => {
   return (
     <div className=" bg-dark text-light">
       <Hero />
-      <Projects />
+      <MyWork />
     </div>
   );
 };
