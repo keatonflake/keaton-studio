@@ -31,11 +31,12 @@ interface Project {
   overview: string;
   why: string;
   images: { url: string }[];
-  links: any[]; // Define the type based on your structure
+  links: any[];
   tags: string[];
   key_features: string[];
   reflection: string;
-  evaluation_scores: any[]; // Define the type based on your structure
+  evaluation_scores: any[];
+  card_description: string;
 }
 
 export default async function ProjectCarouselSSR() {

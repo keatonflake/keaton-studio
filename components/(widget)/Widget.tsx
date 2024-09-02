@@ -91,6 +91,10 @@ const Widget = () => {
             priority
             alt="Compare Motorcycles Poster"
           />
+          <h1 className="absolute top-0 z-10 text-3xl text-white text-center mt-1">
+            Projects
+          </h1>
+          <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
         </div>
         <div className="embla__slide flex items-center justify-center">
           Slide 2
