@@ -1,13 +1,12 @@
-import { MongoClient } from "mongodb";
-
-const uri = process.env.MONGODB_URI || "";
+const { MongoClient } = require('mongodb');
+const uri = process.env.MONGODB_URI || '';
 const client = new MongoClient(uri);
 
 export async function fetchProjects() {
     try {
         await client.connect();
-        const database = client.db("portfolio");
-        const projectsCollection = database.collection("projects");
+        const database = client.db();
+        const projectsCollection = database.collection('projects');
         const projects = await projectsCollection.find({}).toArray();
         return projects;
     } catch (error) {

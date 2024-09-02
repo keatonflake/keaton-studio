@@ -1,4 +1,4 @@
-// import Carousel from "../(carousel)/Carousel";
+import ProjectCarousel from "../(project-carousel)/ProjectCarouselSSR";
 
 const Projects = () => {
   return (
@@ -7,7 +7,7 @@ const Projects = () => {
         My Work
       </h1>
 
-      {/* <Carousel /> */}
+      <ProjectCarousel />
     </div>
   );
 };

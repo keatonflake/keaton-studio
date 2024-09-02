@@ -74,9 +74,9 @@ const Widget = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
   useEffect(() => {
-    if (emblaApi) {
-      console.log(emblaApi.slideNodes()); // Access API
-    }
+    // if (emblaApi) {
+    //   console.log(emblaApi.slideNodes());
+    // }
   }, [emblaApi]);
 
   return (

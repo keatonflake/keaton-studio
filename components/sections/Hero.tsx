@@ -13,7 +13,7 @@ const Hero = () => {
         <ProfileImage />
         <div>
           {/* <SkillsAnimation /> */}
-          <h1 className="text-4xl sm:text-5xl md:text-4xl lg:text-5xl">
+          <h1 className="text-4xl mt-5 font-serif sm:text-5xl md:text-4xl lg:text-5xl">
             Software Engineer
           </h1>
         </div>

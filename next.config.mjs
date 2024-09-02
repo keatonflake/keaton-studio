@@ -4,7 +4,10 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ["compare-motorcycles.onrender.com"], // Add your external domain here
+    domains: [
+      "compare-motorcycles.onrender.com",
+      "keatonbucket.s3.us-east-2.amazonaws.com", // Add your external domain here
+    ],
   },
 };
 
