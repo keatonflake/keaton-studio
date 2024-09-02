@@ -12,8 +12,10 @@ const config: Config = {
         yellow: "#ffbe0b",
         blue: "#415a77",
         gray: "#393838",
+        lightGray: "#4a4a4a",
         dark: "#121212",
-        light: "#f5f5f5"
+        light: "#f5f5f5",
+        softLight: "#e0e0e0"
       },
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
