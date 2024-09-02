@@ -12,9 +12,10 @@ export async function fetchProjects() {
     } catch (error) {
         console.error(`Error: ${(error as Error).message}`);
         process.exit(1);
-    } finally {
-        await client.close();
     }
+    // finally {
+    //     await client.close();
+    // }
 }
 
 // import { fetchProjects } from "../../lib/fetchProjects"; // Update the path as necessary
