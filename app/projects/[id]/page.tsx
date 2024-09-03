@@ -1,7 +1,7 @@
 import { ObjectId } from "mongodb";
 import { fetchProjects } from "../../../lib/fetchProjects";
 import Image from "next/image";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaRegArrowAltCircleLeft } from "react-icons/fa";
 
 interface ProjectProps {
   params: {
@@ -43,6 +43,12 @@ const ProjectPage = async ({ params }: ProjectProps) => {
   }
 
   return (
+    // <a className="absolute left-0" href="/">
+    //       <FaRegArrowAltCircleLeft
+    //         className="hover:text-yellow text-light"
+    //         size="2em"
+    //       />
+    //     </a>
     <div className="text-center w-5/6 mx-auto">
       <h1 className="text-5xl font-serif">{project.title}</h1>
 
@@ -72,7 +78,7 @@ const ProjectPage = async ({ params }: ProjectProps) => {
 
       <h1 className="text-3xl mt-5 font-serif">Key Features</h1>
 
-      <div className="flex flex-wrap justify-center space-x-1 h-1/2">
+      <div className="flex flex-wrap text-left mx-auto lg:ml-44 h-1/2 space-y-3">
         {project.key_features.map((key_feature: KeyFeature) => (
           <h2 key={key_feature.feature}>
             <span className="font-bold text-yellow mr-1">
@@ -84,7 +90,7 @@ const ProjectPage = async ({ params }: ProjectProps) => {
       </div>
 
       <h1 className="text-3xl mt-5 font-serif">Why I Built It</h1>
-      <p>{project.why}</p>
+      <p className="w-4/5 mx-auto">{project.why}</p>
 
       <Image
         src={project.images[0].url}
