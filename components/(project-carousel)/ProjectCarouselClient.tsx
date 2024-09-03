@@ -31,7 +31,7 @@ const ProjectCarouselClient: React.FC<ProjectCarouselClientProps> = ({
     }
   }, []);
 
-  console.log("Projects received:", projects);
+  // console.log("Projects received:", projects);
 
   return (
     <div className="embla" ref={emblaRef}>
@@ -62,7 +62,10 @@ const ProjectCarouselClient: React.FC<ProjectCarouselClientProps> = ({
 
                 <div className="flex flex-wrap justify-center space-x-1 h-1/2">
                   {project.tags.map((tag) => (
-                    <h3 className="font-sans text-xs text-light bg-lightGray px-2 mt-1 text-center flex items-center justify-center">
+                    <h3
+                      key={`${project._id}-${index}`}
+                      className="font-sans text-xs text-light bg-lightGray px-2 mt-1 text-center flex items-center justify-center"
+                    >
                       {tag}
                     </h3>
                   ))}
