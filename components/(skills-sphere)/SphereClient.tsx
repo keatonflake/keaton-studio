@@ -21,10 +21,9 @@ interface SkillsClientProps {
   skills: Skill[];
 }
 
-const Sphere: React.FC<SkillsClientProps> = ({ skills }) => {
+const SphereTemplate: React.FC<SkillsClientProps> = ({ skills }) => {
   return (
     <TagCloud
-      className="text-yellow"
       options={(w: Window & typeof globalThis): TagCloudOptions => ({
         radius: Math.min(500, w.innerWidth, w.innerHeight) / 2,
         maxSpeed: "fast",
@@ -39,4 +38,4 @@ const Sphere: React.FC<SkillsClientProps> = ({ skills }) => {
   );
 };
 
-export default Sphere;
+export default SphereTemplate;

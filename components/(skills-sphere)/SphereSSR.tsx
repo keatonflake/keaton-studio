@@ -1,5 +1,5 @@
 import { fetchSkills } from "../../lib/fetchSkills";
-import Sphere from "./SphereClient";
+import SphereTemplate from "./SphereClient";
 
 interface Skill {
   _id: string;
@@ -18,5 +18,5 @@ export default async function SkillsSSR() {
     _id: skill._id.toString(),
   }));
 
-  return <Sphere skills={serializedSkills} />;
+  return <SphereTemplate skills={serializedSkills} />;
 }

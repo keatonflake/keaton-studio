@@ -46,6 +46,6 @@ h6 {
 
 .embla__carousel_slide {
   flex-shrink: 0;
-  width: auto; /* Allows the slide to size according to its content */
-  margin-right: 16px; /* Add some space between slides */
+  width: auto;
+  margin-right: 16px;
 }
