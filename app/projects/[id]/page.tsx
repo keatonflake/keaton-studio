@@ -1,5 +1,5 @@
 import { ObjectId } from "mongodb";
-import { fetchProjects } from "../../../lib/fetchProjects";
+import { FetchProjects } from "../../../lib/fetchProjects";
 import Image from "next/image";
 import { FaGithub, FaRegArrowAltCircleLeft } from "react-icons/fa";
 
@@ -32,7 +32,7 @@ const ProjectPage = async ({ params }: ProjectProps) => {
 
   const objectId = new ObjectId(id);
 
-  const projects = await fetchProjects();
+  const projects = await FetchProjects();
 
   const project = projects.find(
     (project) => project._id.toString() === objectId.toString()

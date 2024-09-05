@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from "react";
 import EmblaCarousel from "embla-carousel";
 import Image from "next/image";
 import Link from "next/link";
+// import "../../app/styles/project-carousel.css";
 
 interface Project {
   _id: string;
@@ -34,11 +35,11 @@ const ProjectCarouselClient: React.FC<ProjectCarouselClientProps> = ({
   // console.log("Projects received:", projects);
 
   return (
-    <div className="embla" ref={emblaRef}>
-      <div className="embla__container">
+    <div className="overflow-hidden" ref={emblaRef}>
+      <div className="flex mx-auto">
         {projects.map((project, index) => (
-          <div key={project._id} className="embla__carousel_slide">
-            <div className="project-card relative border-2 border-light w-60 rounded-lg m-4 overflow-hidden group">
+          <div key={project._id} className="flex-shrink-0 w-auto mr-4">
+            <div className="project-card relative border-2 border-light rounded-lg m-4 overflow-hidden group">
               <div className="relative image-box">
                 <Image
                   src={project.images[0].url}
@@ -52,8 +53,8 @@ const ProjectCarouselClient: React.FC<ProjectCarouselClientProps> = ({
                 {/* Dark overlay */}
               </div>
 
-              <div className="details-box bg-gray text-white absolute bottom-0 left-0 w-full h-36 px-2 rounded-b-lg">
-                <h1 className="text-xl text-yellow font-bold text-center">
+              <div className="details-box bg-gray text-white absolute bottom-0 left-0 w-full h-1/2 px-2 rounded-b-lg">
+                <h1 className="text-lg text-light font-bold text-center">
                   {project.title}
                 </h1>
                 <h2 className="text-sm mb-1 text-softLight text-center">

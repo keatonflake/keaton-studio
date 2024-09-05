@@ -1,7 +1,6 @@
 import { LinkedIn, GitHub, Resume } from "../(buttons)/Buttons";
-import ProfileImage from "../(profile-box)/ProfileImage";
 import Widget from "../(widget)/Widget";
-// import SkillsAnimation from "../(skills-animation)/SkillsAnimation";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -10,7 +9,16 @@ const Hero = () => {
       <div className="flex flex-col justify-center items-center text-center md:border-r-4 md:border-light h-full">
         <h2 className="text-2xl">Hello! I am</h2>
         <h1 className="text-6xl font-serif m-2">Keaton Flake</h1>
-        <ProfileImage />
+        <div className="flex justify-center items-center overflow-hidden w-[250px] h-[250px] rounded-full bg-blue border-4 border-light mx-auto">
+          <Image
+            className="object-cover translate-y-1/4"
+            src="/images/profile.png"
+            width={250}
+            height={250}
+            priority
+            alt="portrait of Keaton Flake"
+          />
+        </div>
         <div>
           {/* <SkillsAnimation /> */}
           <h1 className="text-4xl mt-5 font-serif sm:text-5xl md:text-4xl lg:text-5xl">
@@ -39,9 +47,7 @@ const Hero = () => {
           <GitHub />
         </div>
 
-        <div className="flex justify-center">
-          <Widget />
-        </div>
+        <Widget />
       </div>
     </div>
   );

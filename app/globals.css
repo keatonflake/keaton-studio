@@ -33,19 +33,11 @@ h6 {
   color: var(--color-light); /* Set header text color */
 }
 
-.embla {
-  overflow: hidden;
-}
-.embla__container {
-  display: flex;
-}
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 0;
+.tagcloud--item {
+  transition: font-size 0.5s ease;
 }
 
-.embla__carousel_slide {
-  flex-shrink: 0;
-  width: auto;
-  margin-right: 16px;
+.tagcloud--item:hover {
+  color: var(--color-yellow);
+  font-size: 1.5rem;
 }

@@ -21,32 +21,32 @@
 // }
 
 // components/ProjectCards.tsx
-import { fetchProjects } from "../../lib/fetchProjects";
-import ProjectCarouselClient from "./ProjectCarouselClient";
+// import { fetchProjects } from "../../lib/fetchProjects";
+// import ProjectCarouselClient from "./ProjectCarouselClient";
 
-// Define the project type, ensuring _id is a string
-interface Project {
-  _id: string;
-  title: string;
-  overview: string;
-  why: string;
-  images: { url: string }[];
-  links: any[];
-  tags: string[];
-  key_features: string[];
-  reflection: string;
-  evaluation_scores: any[];
-  card_description: string;
-}
+// // Define the project type, ensuring _id is a string
+// interface Project {
+//   _id: string;
+//   title: string;
+//   overview: string;
+//   why: string;
+//   images: { url: string }[];
+//   links: any[];
+//   tags: string[];
+//   key_features: string[];
+//   reflection: string;
+//   evaluation_scores: any[];
+//   card_description: string;
+// }
 
-export default async function ProjectCarouselSSR() {
-  const projects = await fetchProjects();
+// export default async function ProjectCarouselSSR() {
+//   const projects = await fetchProjects();
 
-  // Convert ObjectId to a string
-  const serializedProjects: Project[] = projects.map((project: any) => ({
-    ...project,
-    _id: project._id.toString(),
-  }));
+//   // Convert ObjectId to a string
+//   const serializedProjects: Project[] = projects.map((project: any) => ({
+//     ...project,
+//     _id: project._id.toString(),
+//   }));
 
-  return <ProjectCarouselClient projects={serializedProjects} />;
-}
+//   return <ProjectCarouselClient projects={serializedProjects} />;
+// }

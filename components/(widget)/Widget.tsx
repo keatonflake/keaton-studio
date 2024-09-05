@@ -65,42 +65,76 @@
 
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
 const Widget = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
-
-  useEffect(() => {
-    // if (emblaApi) {
-    //   console.log(emblaApi.slideNodes());
-    // }
-  }, [emblaApi]);
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
   return (
-    <div className="embla" ref={emblaRef}>
-      <div className="embla__container">
-        <div className="embla__slide relative w-72 md:w-96 h-44 rounded-lg overflow-hidden">
+    <div className="overflow-hidden" ref={emblaRef}>
+      <div className="flex">
+        <div className="flex-shrink-0 w-full h-44 md:h-52 relative rounded-lg overflow-hidden">
           <Image
-            className="w-cover h-cover"
+            className="object-cover w-full h-full"
             src="https://compare-motorcycles.onrender.com/assets/motorcycle_mobile-B1xuxxSp.jpg"
             width={700}
             height={400}
             priority
             alt="Compare Motorcycles Poster"
           />
-          <h1 className="absolute top-0 z-10 text-3xl text-white text-center mt-1">
+          <h1 className="absolute top-2 left-2 right-2 z-10 text-2xl md:text-3xl text-white text-center">
             Projects
           </h1>
-          <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
+          <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
-        <div className="embla__slide flex items-center justify-center">
-          Slide 2
+        {/* Additional slides */}
+
+        <div className="flex-shrink-0 w-full h-44 md:h-52 relative rounded-lg overflow-hidden">
+          <Image
+            className="object-cover w-full h-full"
+            src="https://compare-motorcycles.onrender.com/assets/motorcycle_mobile-B1xuxxSp.jpg"
+            width={700}
+            height={400}
+            priority
+            alt="Compare Motorcycles Poster"
+          />
+          <h1 className="absolute top-2 left-2 right-2 z-10 text-2xl md:text-3xl text-white text-center">
+            Projects
+          </h1>
+          <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
-        <div className="embla__slide flex items-center justify-center">
-          Slide 3
+
+        <div className="flex-shrink-0 w-full h-44 md:h-52 relative rounded-lg overflow-hidden">
+          <Image
+            className="object-cover w-full h-full"
+            src="https://compare-motorcycles.onrender.com/assets/motorcycle_mobile-B1xuxxSp.jpg"
+            width={700}
+            height={400}
+            priority
+            alt="Compare Motorcycles Poster"
+          />
+          <h1 className="absolute top-2 left-2 right-2 z-10 text-2xl md:text-3xl text-white text-center">
+            Projects
+          </h1>
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+
+        <div className="flex-shrink-0 w-full h-44 md:h-52 relative rounded-lg overflow-hidden">
+          <Image
+            className="object-cover w-full h-full"
+            src="https://compare-motorcycles.onrender.com/assets/motorcycle_mobile-B1xuxxSp.jpg"
+            width={700}
+            height={400}
+            priority
+            alt="Compare Motorcycles Poster"
+          />
+          <h1 className="absolute top-2 left-2 right-2 z-10 text-2xl md:text-3xl text-white text-center">
+            Projects
+          </h1>
+          <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
       </div>
     </div>

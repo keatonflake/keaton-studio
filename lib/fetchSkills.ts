@@ -4,7 +4,7 @@ import { MongoClient } from 'mongodb';
 const uri = process.env.MONGODB_URI || '';
 const client = new MongoClient(uri);
 
-export async function fetchSkills() {
+export async function FetchSkills() {
     try {
         await connectDB(); // Ensure the connection is established
 
