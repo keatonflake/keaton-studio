@@ -24,18 +24,18 @@ export default async function Skills() {
 
   return (
     <div className="mt-10 w-full lg:max-w-7xl mx-auto">
-      <h1 className="text-4xl text-center font-serif py-2">Skills & Tools</h1>
-      <div className="flex flex-col md:flex-row w-3/4 mx-auto">
+      <h1 className="text-4xl text-center font-serif py-2 border-b-2 border-light">
+        Skills & Tools
+      </h1>
+      <div className="flex flex-col md:flex-row md:w-full mx-auto">
         <div className="">
           <Suspense fallback={<div>Loading...</div>}>
             <SphereTemplate skills={serializedSkills} />
           </Suspense>
         </div>
 
-        <span className="text-left"></span>
-
-        <div className="mt-32 ml-10 w-1/3">
-          <h2 className="text-lg text-yellow ">
+        <div className="md:mt-32 md:ml-10 md:w-1/3 ">
+          <h2 className="text-xl text-yellow w-full text-center ">
             Click on an item for details:
           </h2>
         </div>

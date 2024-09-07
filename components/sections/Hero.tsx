@@ -4,17 +4,17 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:max-w-7xl mx-auto my-10 gap-4">
+    <div className="grid grid-cols-1 my-28 md:grid-cols-2 lg:max-w-7xl mx-auto gap-4">
       {/* Left Side */}
       <div className="flex flex-col justify-center items-center text-center md:border-r-4 md:border-light h-full">
         <h2 className="text-2xl">Hello! I am</h2>
         <h1 className="text-6xl font-serif m-2">Keaton Flake</h1>
-        <div className="flex justify-center items-center overflow-hidden w-[250px] h-[250px] rounded-full bg-blue border-4 border-light mx-auto">
+        <div className="flex justify-center items-center overflow-hidden w-72 h-72 rounded-full bg-blue border-4 border-light mx-auto">
           <Image
-            className="object-cover translate-y-1/4"
-            src="/images/profile.png"
-            width={250}
-            height={250}
+            className="object-cover"
+            src="/images/profile.webp"
+            width={600}
+            height={600}
             priority
             alt="portrait of Keaton Flake"
           />

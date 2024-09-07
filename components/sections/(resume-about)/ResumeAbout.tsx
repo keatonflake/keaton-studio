@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Resume from "../(resume-about)/Resume";
-import AboutMe from "../(resume-about)/AboutMe";
+import AboutMeSection from "./AboutMeSectionSSR";
 
 const ResumeAbout = () => {
   const [displayedComponent, setDisplayedComponent] = useState(1);
@@ -35,7 +35,7 @@ const ResumeAbout = () => {
           Option 2
         </button>
       </header>
-      <main>{displayedComponent === 1 ? <Resume /> : <AboutMe />}</main>
+      <main>{displayedComponent === 1 ? <Resume /> : <AboutMeSection />}</main>
     </div>
   );
 };

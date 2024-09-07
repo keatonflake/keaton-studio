@@ -47,7 +47,7 @@ const ProjectCarouselClient: React.FC<ProjectCarouselClientProps> = ({
                   height={500}
                   priority
                   alt={`cover image of ${project.title}`}
-                  className="object-cover rounded-lg mx-auto"
+                  className="object-cover rounded-lg h-96"
                 />
                 <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
                 {/* Dark overlay */}
@@ -57,18 +57,18 @@ const ProjectCarouselClient: React.FC<ProjectCarouselClientProps> = ({
                 <h1 className="text-lg text-light font-bold text-center">
                   {project.title}
                 </h1>
-                <h2 className="text-sm mb-1 text-softLight text-center">
+                <h2 className="text-sm mb-3 text-softLight text-center">
                   {project.card_description}
                 </h2>
 
-                <div className="flex flex-wrap justify-center space-x-1 h-1/2">
+                <div className="flex flex-wrap justify-center items-center space-x-1 space-y-1 h-auto">
                   {project.tags.map((tag, index) => (
-                    <h3
+                    <p
                       key={`${project._id}-${index}`}
-                      className="font-sans text-xs text-light bg-lightGray px-2 mt-1 text-center flex items-center justify-center"
+                      className="flex items-center justify-center font-sans text-sm text-center text-light bg-lightGray h-8 p-2 rounded-full"
                     >
                       {tag}
-                    </h3>
+                    </p>
                   ))}
                 </div>
               </div>

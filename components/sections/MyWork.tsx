@@ -25,8 +25,8 @@ const Projects = async () => {
   }));
 
   return (
-    <div className=" mt-10 w-full h-fit lg:max-w-7xl rounded-lg mx-auto">
-      <h1 className="text-4xl text-center font-serif py-4 border-b-2 border-light">
+    <div className=" my-20 w-full h-fit lg:max-w-7xl rounded-lg mx-auto">
+      <h1 className="text-4xl text-center font-serif py-2 border-b-2 border-light">
         My Work
       </h1>
 

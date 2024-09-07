@@ -76,7 +76,7 @@ const Widget = () => {
   return (
     <div className="overflow-hidden" ref={emblaRef}>
       <div className="flex">
-        <div className="flex-shrink-0 w-full h-44 md:h-52 relative rounded-lg overflow-hidden">
+        <div className="flex-shrink-0 w-5/6 h-44 mx-10 md:h-52 relative rounded-lg overflow-hidden">
           <Image
             className="object-cover w-full h-full"
             src="https://compare-motorcycles.onrender.com/assets/motorcycle_mobile-B1xuxxSp.jpg"
@@ -91,51 +91,6 @@ const Widget = () => {
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
         {/* Additional slides */}
-
-        <div className="flex-shrink-0 w-full h-44 md:h-52 relative rounded-lg overflow-hidden">
-          <Image
-            className="object-cover w-full h-full"
-            src="https://compare-motorcycles.onrender.com/assets/motorcycle_mobile-B1xuxxSp.jpg"
-            width={700}
-            height={400}
-            priority
-            alt="Compare Motorcycles Poster"
-          />
-          <h1 className="absolute top-2 left-2 right-2 z-10 text-2xl md:text-3xl text-white text-center">
-            Projects
-          </h1>
-          <div className="absolute inset-0 bg-black opacity-50"></div>
-        </div>
-
-        <div className="flex-shrink-0 w-full h-44 md:h-52 relative rounded-lg overflow-hidden">
-          <Image
-            className="object-cover w-full h-full"
-            src="https://compare-motorcycles.onrender.com/assets/motorcycle_mobile-B1xuxxSp.jpg"
-            width={700}
-            height={400}
-            priority
-            alt="Compare Motorcycles Poster"
-          />
-          <h1 className="absolute top-2 left-2 right-2 z-10 text-2xl md:text-3xl text-white text-center">
-            Projects
-          </h1>
-          <div className="absolute inset-0 bg-black opacity-50"></div>
-        </div>
-
-        <div className="flex-shrink-0 w-full h-44 md:h-52 relative rounded-lg overflow-hidden">
-          <Image
-            className="object-cover w-full h-full"
-            src="https://compare-motorcycles.onrender.com/assets/motorcycle_mobile-B1xuxxSp.jpg"
-            width={700}
-            height={400}
-            priority
-            alt="Compare Motorcycles Poster"
-          />
-          <h1 className="absolute top-2 left-2 right-2 z-10 text-2xl md:text-3xl text-white text-center">
-            Projects
-          </h1>
-          <div className="absolute inset-0 bg-black opacity-50"></div>
-        </div>
       </div>
     </div>
   );
