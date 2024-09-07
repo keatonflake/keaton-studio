@@ -58,7 +58,7 @@ const SphereTemplate: React.FC<SkillsClientProps> = ({ skills }) => {
           Click on an item for details:
         </h2> */}
         <h1
-          className="text-center md:text-center text-4xl text-yellow font-sans w-full"
+          className="text-center md:text-left text-4xl text-yellow font-sans w-full"
           id="title"
         >
           Click on an item for details:
