@@ -68,7 +68,7 @@ const SphereTemplate: React.FC<SkillsClientProps> = ({ skills }) => {
         </h2>
         <h3
           id="experience"
-          className="flex flex-col md:block md:text-center text-xl mt-2"
+          className="flex flex-col md:block md:text-left text-xl mt-2"
         >
           {/* <span className="text-white text-lg md:text-left md:ml-1"></span> */}
         </h3>
