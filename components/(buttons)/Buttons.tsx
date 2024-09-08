@@ -1,5 +1,6 @@
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
+import { PiGraduationCapThin } from "react-icons/pi";
 
 export const LinkedIn = () => {
   return (
@@ -29,3 +30,7 @@ export const Resume = () => {
     </a>
   );
 };
+
+// export const GradCap = () => {
+//   return <PiGraduationCapThin color="#FAF9F6" size="7em" />;
+// };

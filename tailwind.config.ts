@@ -10,6 +10,9 @@ const config: Config = {
     extend: {
       colors: {
         yellow: "#ffbe0b",
+        byui: "#002E5D",
+        light_byui: "#5271ff",
+        vivacity: "#61269f",
         blue: "#415a77",
         gray: "#393838",
         lightGray: "#4a4a4a",
