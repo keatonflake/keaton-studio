@@ -43,7 +43,7 @@
 //     <div className="flex justify-center items-center">
 //       <div
 //         ref={widgetRef}
-//         className="relative w-5/6 h-44 lg:w-full lg:h-52 rounded-lg overflow-hidden"
+//         className="relative w-5/6 h-44 lg:w-full rounded-lg overflow-hidden"
 //       >
 //         <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 bg-white bg-opacity-50">
 //           <div className="flex justify-center items-center">
@@ -72,16 +72,17 @@ import Image from "next/image";
 
 const Widget = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 3500 }),
+    // Autoplay({ delay: 3500 }),
   ]);
 
   return (
     <div className="overflow-hidden" ref={emblaRef}>
       <div className="flex">
-        <div className="flex-shrink-0 w-5/6 h-44 mx-10 md:h-52 relative rounded-lg bg-gradient-to-r from-light_byui to-byui">
+        {/* slide 1 */}
+        <div className="flex-shrink-0 w-full px-2 h-44 md:h-52 relative rounded-lg bg-gradient-to-r from-light_byui to-byui">
           <div className="absolute top-4 z-10 w-1/3 p-4 text-white border-light border-r-2">
             <FaGraduationCap size={80} className="m-auto" />
-            <h1 className="text-sm m-auto text-center">
+            <h1 className="text-sm lg:text-lg m-auto text-center">
               Brigham Young University Idaho
             </h1>
           </div>
@@ -97,31 +98,80 @@ const Widget = () => {
         </div>
         {/* Additional slides */}
 
-        <div className="flex-shrink-0 w-5/6 h-44 mx-10 md:h-52 relative rounded-lg bg-vivacity">
-          <div className="absolute top-1 z-10 w-1/3 p-4 text-white border-light border-r-2">
+        <div className="flex-shrink-0 w-full px-2 h-44 md:h-52 relative rounded-lg bg-vivacity">
+          <div className="absolute top-1 z-10 w-1/3 px-4 text-white border-light border-r-2">
             <Image
-              className="object-cover"
+              className="object-cover lg:w-36 lg:mx-auto"
               src="/images/vivacity.png"
               width={300}
               height={300}
               priority
               alt="portrait of Keaton Flake"
             />
-            <h1 className="text-xl m-auto text-center">Vivacity Tech</h1>
+            <h1 className="text-2xl m-auto text-center">Vivacity Tech</h1>
           </div>
-          <div className="absolute ml-44 z-10 w-2/3 p-4 text-white">
-            <h2 className="text-2xl mt-5 mx-auto text-center font-serif">
+          <div className="absolute ml-36 md:ml-36 lg:ml-48 z-10 w-2/3 p-4 text-white">
+            <h2 className="text-xl md:text-2xl lg:text-3xl md:mt-5 lg:mt-3 mx-auto text-center font-serif">
               Software Quality Assurance Intern
             </h2>
-            <h1 className="text-3xl mt-2 mx-auto text-center font-sans text-yellow">
+            <h1 className="text-2xl md:text-3xl md:mt-2 lg:mt-1 mx-auto text-center font-sans text-yellow">
               April - July 2023
             </h1>
-            <h3 className="text-lg mt-3 mx-auto text-center font-sans">
+            <h3 className="text-lg lg:text-xl md:mt-3 lg:mt-1 mx-auto text-center font-sans">
               Dream Asset Management Application
             </h3>
           </div>
-          {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
         </div>
+        {/* Next slide */}
+        <div className="flex-shrink-0 w-full px-2 h-44 md:h-52 relative rounded-lg bg-gradient-to-r from-lightGray to-softLight hover:from-gray hover:to-blue transition-colors ease-in duration-300">
+          <div className="absolute top-10 lg:top-3 z-10 w-24 lg:w-36 p-1 md:p-4 text-white border-light border-r-2">
+            <h1 className="text-3xl lg:text-4xl font-serif mt-1 md:mt-8 text-yellow m-auto text-center">
+              About Me
+            </h1>
+          </div>
+          <div className="absolute ml-24 mt-4 md:ml-44 z-10 w-fit p-1 text-white">
+            {/* <h2 className="text-xl mx-auto text-center">My Inspiration:</h2> */}
+            <h1 className="text-sm md:text-lg ml-1 mx-auto text-center font-sans ">
+              Books that have made a significant impact
+            </h1>
+            <div className="flex flex-row space-x-2 overflow-hidden">
+              <Image
+                className="object-cover h-28"
+                src="/images/mindfornumbers.jpg"
+                width={100}
+                height={100}
+                priority
+                alt="cover image of book"
+              />
+              <Image
+                className="object-cover h-28"
+                src="/images/canthurtme.jpg"
+                width={100}
+                height={100}
+                priority
+                alt="cover image of book"
+              />
+              <Image
+                className="object-cover h-28"
+                src="/images/gettingreal.png"
+                width={100}
+                height={100}
+                priority
+                alt="cover image of book"
+              />
+              <Image
+                className="object-cover h-28"
+                src="/images/atomichabits.jpg"
+                width={100}
+                height={100}
+                priority
+                alt="cover image of book"
+              />
+            </div>
+          </div>
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        {/* Next slide */}
       </div>
     </div>
   );
