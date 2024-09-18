@@ -1,7 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛠️ My portfolio: Web App Built with Next.js | Tailwind CSS | MongoDB
 
-## Getting Started
+⭐⭐ Projects, skills, resume, and About Info are stored in a database and rendered dynamically.
 
+## 👉 Check it out: [Keaton.Studio](https://keaton.studio)
+
+### Getting Started
 First, run the development server:
 
 ```bash
