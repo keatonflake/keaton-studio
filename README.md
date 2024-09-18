@@ -1,6 +1,6 @@
 # 🛠️ My portfolio: Web App Built with Next.js | Tailwind CSS | MongoDB
 
-⭐⭐ Projects, skills, resume, and About Info are stored in a database and rendered dynamically.
+Projects, skills, resume, and About Info are stored in a database and rendered dynamically.
 
 ## 👉 Check it out: [Keaton.Studio](https://keaton.studio)
 
