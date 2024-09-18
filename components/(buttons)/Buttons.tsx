@@ -24,7 +24,7 @@ export const GitHub = () => {
 export const Resume = () => {
   return (
     <a href="https://github.com/keatonflake">
-      <button className="rounded-full bg-blue border-2 text-2xl font-serif cursor-pointer border-light px-3 py-1">
+      <button className="rounded-full bg-transparent border-2 text-2xl font-serif cursor-pointer border-light px-3 py-1">
         Resume
       </button>
     </a>
