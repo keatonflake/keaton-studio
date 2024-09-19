@@ -1,8 +1,13 @@
+import React from "react";
+import Image from "next/image";
 import { LinkedIn, GitHub, Resume } from "../(buttons)/Buttons";
 import Widget from "../(widget)/Widget";
-import Image from "next/image";
 
-const Hero = () => {
+interface HeroProps {
+  onOpenModal: () => void;
+}
+
+const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
   return (
     <div className="grid grid-cols-1 my-16 md:my-24 md:grid-cols-2 lg:max-w-7xl mx-auto gap-4">
       {/* Left Side */}
@@ -25,7 +30,11 @@ const Hero = () => {
             Software Engineer
           </h1>
         </div>
-        <button className="mt-5 border-yellow border-2 px-5 py-3 rounded-full">
+        <button
+          id="message"
+          className="mt-5 border-yellow border-2 px-5 py-3 rounded-full"
+          onClick={onOpenModal} // Trigger modal open on button click
+        >
           Send a message
         </button>
       </div>
