@@ -120,7 +120,7 @@ const Widget = () => {
               </h1>
             </a>
           </div>
-          <div className="absolute ml-40 lg:ml-48 z-10 w-2/3 p-4 text-white">
+          <div className="absolute ml-36 md:ml-40 lg:ml-48 z-10 w-2/3 p-4 text-white">
             <a href="/AboutMe">
               <h2 className="text-xl md:text-2xl lg:text-3xl md:mt-5 lg:mt-3 mx-auto text-center font-serif">
                 Software Quality Assurance Intern
