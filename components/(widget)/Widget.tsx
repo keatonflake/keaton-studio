@@ -112,9 +112,11 @@ const Widget = () => {
               priority
               alt="portrait of Keaton Flake"
             />
-            <h1 className="text-2xl m-auto text-center">Vivacity Tech</h1>
+            <h1 className="text-xl md:text-2xl m-auto text-center">
+              Vivacity Tech
+            </h1>
           </div>
-          <div className="absolute ml-32 md:ml-36 lg:ml-48 z-10 w-2/3 p-4 text-white">
+          <div className="absolute ml-40 lg:ml-48 z-10 w-2/3 p-4 text-white">
             <h2 className="text-xl md:text-2xl lg:text-3xl md:mt-5 lg:mt-3 mx-auto text-center font-serif">
               Software Quality Assurance Intern
             </h2>

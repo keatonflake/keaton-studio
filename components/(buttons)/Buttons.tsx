@@ -1,6 +1,5 @@
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
-import { PiGraduationCapThin } from "react-icons/pi";
 
 export const LinkedIn = () => {
   return (
@@ -23,7 +22,7 @@ export const GitHub = () => {
 
 export const Resume = () => {
   return (
-    <a href="https://github.com/keatonflake">
+    <a href="/keatonflake_9_18.pdf" download="keatonflake_resume.pdf">
       <button className="rounded-full bg-transparent border-2 text-2xl font-serif cursor-pointer border-light px-3 py-1">
         Resume
       </button>
