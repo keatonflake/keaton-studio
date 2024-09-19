@@ -49,7 +49,7 @@ const ProjectPage = async ({ params }: ProjectProps) => {
     //         size="2em"
     //       />
     //     </a>
-    <div className="text-center w-5/6 mx-auto">
+    <div className="text-center w-5/6 mx-auto mt-16">
       <h1 className="text-5xl font-serif">{project.title}</h1>
 
       <div className="flex flex-row items-center justify-center space-x-5">
@@ -63,15 +63,17 @@ const ProjectPage = async ({ params }: ProjectProps) => {
           </button>
         </a>
 
-        <a
-          href={project.links.live_project}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button className="mt-5 bg-yellow text-dark px-8 py-3 rounded-full">
-            Try It Live
-          </button>
-        </a>
+        {project.links.live_project && (
+          <a
+            href={project.links.live_project}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="mt-5 bg-yellow text-dark px-8 py-3 rounded-full">
+              Try It Live
+            </button>
+          </a>
+        )}
       </div>
 
       <p className="mt-5 w-2/3 mx-auto">{project.overview}</p>
@@ -94,7 +96,7 @@ const ProjectPage = async ({ params }: ProjectProps) => {
 
       <Image
         src={project.images[0].url}
-        width={500}
+        width={200}
         height={300}
         alt={`Image of ${project.title}`}
       />
