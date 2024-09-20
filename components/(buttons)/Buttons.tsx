@@ -22,7 +22,10 @@ export const GitHub = () => {
 
 export const Resume = () => {
   return (
-    <a href="/keatonflake_9_18.pdf" download="keatonflake_resume.pdf">
+    <a
+      href="/keatonflake_resume_9-20-24.pdf"
+      download="keatonflake_resume_9-20-24.pdf"
+    >
       <button className="rounded-full bg-transparent border-2 text-2xl font-serif cursor-pointer border-light px-3 py-1">
         Resume
       </button>
