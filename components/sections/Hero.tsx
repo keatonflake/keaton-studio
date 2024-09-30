@@ -46,7 +46,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
             I am driven by a deep passion for continuous learning, making a
             meaningful impact, and coding with best development methodologies
             and standards.{" "}
-            <a href="/AboutMe" className="cursor-pointer text-yellow">
+            <a href="#AboutMe" className="cursor-pointer text-yellow">
               Learn More
             </a>
           </p>

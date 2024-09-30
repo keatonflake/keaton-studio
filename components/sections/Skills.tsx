@@ -23,7 +23,7 @@ export default async function Skills() {
   }));
 
   return (
-    <div className="flex flex-col mt-10 w-full my-28 lg:max-w-7xl mx-auto">
+    <div className="flex flex-col mt-10 w-full my-5 lg:max-w-7xl mx-auto">
       <h1 className="text-4xl text-center font-serif py-2 border-b-2 border-light">
         Skills & Tools
       </h1>

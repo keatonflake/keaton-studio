@@ -17,7 +17,6 @@ export async function FetchProjects() {
         return projects;
     } catch (error) {
         console.error(`Error: ${(error as Error).message}`);
-        throw error; // Optionally throw the error to handle it in the calling function
     }
 }
 

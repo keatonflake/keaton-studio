@@ -1,68 +1,3 @@
-// "use client";
-// // components/Widget.tsx
-// import { useEffect, useRef, useState } from "react";
-// // import Image from 'next/image';
-
-// const images: string[] = [
-//   "https://compare-motorcycles.onrender.com/assets/motorcycle_mobile-B1xuxxSp.jpg",
-//   "https://compare-motorcycles.onrender.com/assets/motorcycle_mobile-B1xuxxSp.jpg",
-//   "https://compare-motorcycles.onrender.com/assets/motorcycle_mobile-B1xuxxSp.jpg",
-//   "https://compare-motorcycles.onrender.com/assets/motorcycle_mobile-B1xuxxSp.jpg",
-//   "https://compare-motorcycles.onrender.com/assets/motorcycle_mobile-B1xuxxSp.jpg",
-//   "https://compare-motorcycles.onrender.com/assets/motorcycle_mobile-B1xuxxSp.jpg",
-//   "https://compare-motorcycles.onrender.com/assets/motorcycle_mobile-B1xuxxSp.jpg",
-// ];
-
-// const Widget = () => {
-//   const widgetRef = useRef<HTMLDivElement>(null);
-//   const [displayIndex, setDisplayIndex] = useState<number>(0);
-
-//   useEffect(() => {
-//     if (widgetRef.current) {
-//       const widget = widgetRef.current;
-//       widget.innerHTML = "";
-
-//       images.forEach((imageSrc, index) => {
-//         const displayBox = document.createElement("div");
-//         const image = document.createElement("img");
-
-//         image.src = imageSrc;
-//         image.classList.add("object-cover");
-
-//         displayBox.appendChild(image);
-//         widget.appendChild(displayBox);
-
-//         if (index !== displayIndex) {
-//           displayBox.classList.add("hidden");
-//         }
-//       });
-//     }
-//   }, [displayIndex]);
-
-//   return (
-//     <div className="flex justify-center items-center">
-//       <div
-//         ref={widgetRef}
-//         className="relative w-5/6 h-44 lg:w-full rounded-lg overflow-hidden"
-//       >
-//         <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 bg-white bg-opacity-50">
-//           <div className="flex justify-center items-center">
-//             <span className="text-white">o</span>
-//           </div>
-//           <div className="flex justify-center items-center">
-//             <span className="text-white">o</span>
-//           </div>
-//           <h1 className="col-span-2 row-start-1 text-white text-center mt-1">
-//             Compare Motorcycles
-//           </h1>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Widget;
-
 "use client";
 
 import useEmblaCarousel from "embla-carousel-react";
@@ -80,7 +15,7 @@ const Widget = () => {
       <div className="flex">
         {/* slide 1 */}
         <div className="flex-shrink-0 w-full px-2 h-44 md:h-52 relative rounded-lg bg-gradient-to-r from-light_byui to-byui">
-          <a href="/AboutMe">
+          <a href="#AboutMe">
             <div className="absolute top-4 z-10 w-1/3 px-2 text-white border-light border-r-2">
               <FaGraduationCap size={80} className="m-auto" />
               <h1 className="text-sm lg:text-lg m-auto text-center">
@@ -106,7 +41,7 @@ const Widget = () => {
 
         <div className="flex-shrink-0 w-full px-2 h-44 md:h-52 relative rounded-lg bg-vivacity">
           <div className="absolute top-1 z-10 w-1/3 px-4 text-white border-light border-r-2">
-            <a href="/AboutMe">
+            <a href="#AboutMe">
               <Image
                 className="object-cover lg:w-36 lg:mx-auto"
                 src="/images/vivacity.png"
@@ -121,7 +56,7 @@ const Widget = () => {
             </a>
           </div>
           <div className="absolute ml-36 md:ml-40 lg:ml-48 z-10 w-2/3 p-4 text-white">
-            <a href="/AboutMe">
+            <a href="#AboutMe">
               <h2 className="text-xl md:text-2xl lg:text-3xl md:mt-5 lg:mt-3 mx-auto text-center font-serif">
                 Software Quality Assurance Intern
               </h2>
@@ -136,7 +71,7 @@ const Widget = () => {
         </div>
         {/* Next slide */}
         <div className="flex-shrink-0 w-full px-2 h-44 md:h-52 relative rounded-lg bg-gradient-to-r from-lightGray to-softLight hover:from-gray hover:to-blue transition-colors ease-in duration-300">
-          <a href="/AboutMe">
+          <a href="#AboutMe">
             <div className="absolute top-10 lg:top-3 z-10 w-24 lg:w-36 p-1 md:p-4 text-white ">
               <h1 className="text-3xl lg:text-4xl font-serif mt-1 md:mt-8 text-yellow m-auto text-center">
                 About Me

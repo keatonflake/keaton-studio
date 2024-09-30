@@ -18,6 +18,9 @@ interface Project {
 const Projects = async () => {
   const projects = await FetchProjects();
 
+  if (!projects) {
+    return <div>Fetching Error</div>;
+  }
   // Convert ObjectId to a string
   const serializedProjects: Project[] = projects.map((project: any) => ({
     ...project,
