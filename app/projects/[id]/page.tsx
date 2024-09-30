@@ -34,6 +34,10 @@ const ProjectPage = async ({ params }: ProjectProps) => {
 
   const projects = await FetchProjects();
 
+  if (!projects) {
+    return <div>No projects found</div>;
+  }
+
   const project = projects.find(
     (project) => project._id.toString() === objectId.toString()
   );
